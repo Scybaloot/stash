@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CBEFF132A5B7A000097340F /* stashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF122A5B7A000097340F /* stashApp.swift */; };
+		5CBEFF152A5B7A000097340F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF142A5B7A000097340F /* ContentView.swift */; };
+		5CBEFF172A5B7A000097340F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEFF162A5B7A000097340F /* Assets.xcassets */; };
+		5CBEFF1A2A5B7A000097340F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEFF192A5B7A000097340F /* Preview Assets.xcassets */; };
+		5CBEFF1C2A5B7A000097340F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF1B2A5B7A000097340F /* Persistence.swift */; };
+		5CBEFF1F2A5B7A000097340F /* stash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF1D2A5B7A000097340F /* stash.xcdatamodeld */; };
+		5CBEFF2A2A5B7A010097340F /* stashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF292A5B7A010097340F /* stashTests.swift */; };
+		5CBEFF342A5B7A010097340F /* stashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF332A5B7A010097340F /* stashUITests.swift */; };
+		5CBEFF362A5B7A010097340F /* stashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF352A5B7A010097340F /* stashUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CBEFF262A5B7A010097340F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBEFF072A5B79FF0097340F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CBEFF0E2A5B7A000097340F;
+			remoteInfo = stash;
+		};
+		5CBEFF302A5B7A010097340F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBEFF072A5B79FF0097340F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CBEFF0E2A5B7A000097340F;
+			remoteInfo = stash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CBEFF0F2A5B7A000097340F /* stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEFF122A5B7A000097340F /* stashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashApp.swift; sourceTree = "<group>"; };
+		5CBEFF142A5B7A000097340F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CBEFF162A5B7A000097340F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CBEFF192A5B7A000097340F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CBEFF1B2A5B7A000097340F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5CBEFF1E2A5B7A000097340F /* stash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stash.xcdatamodel; sourceTree = "<group>"; };
+		5CBEFF202A5B7A000097340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBEFF252A5B7A010097340F /* stashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEFF292A5B7A010097340F /* stashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashTests.swift; sourceTree = "<group>"; };
+		5CBEFF2F2A5B7A010097340F /* stashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEFF332A5B7A010097340F /* stashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashUITests.swift; sourceTree = "<group>"; };
+		5CBEFF352A5B7A010097340F /* stashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CBEFF0C2A5B7A000097340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEFF222A5B7A010097340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEFF2C2A5B7A010097340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CBEFF062A5B79FF0097340F = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF112A5B7A000097340F /* stash */,
+				5CBEFF282A5B7A010097340F /* stashTests */,
+				5CBEFF322A5B7A010097340F /* stashUITests */,
+				5CBEFF102A5B7A000097340F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CBEFF102A5B7A000097340F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF0F2A5B7A000097340F /* stash.app */,
+				5CBEFF252A5B7A010097340F /* stashTests.xctest */,
+				5CBEFF2F2A5B7A010097340F /* stashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CBEFF112A5B7A000097340F /* stash */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF122A5B7A000097340F /* stashApp.swift */,
+				5CBEFF142A5B7A000097340F /* ContentView.swift */,
+				5CBEFF162A5B7A000097340F /* Assets.xcassets */,
+				5CBEFF1B2A5B7A000097340F /* Persistence.swift */,
+				5CBEFF202A5B7A000097340F /* Info.plist */,
+				5CBEFF1D2A5B7A000097340F /* stash.xcdatamodeld */,
+				5CBEFF182A5B7A000097340F /* Preview Content */,
+			);
+			path = stash;
+			sourceTree = "<group>";
+		};
+		5CBEFF182A5B7A000097340F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF192A5B7A000097340F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CBEFF282A5B7A010097340F /* stashTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF292A5B7A010097340F /* stashTests.swift */,
+			);
+			path = stashTests;
+			sourceTree = "<group>";
+		};
+		5CBEFF322A5B7A010097340F /* stashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF332A5B7A010097340F /* stashUITests.swift */,
+				5CBEFF352A5B7A010097340F /* stashUITestsLaunchTests.swift */,
+			);
+			path = stashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CBEFF0E2A5B7A000097340F /* stash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEFF392A5B7A010097340F /* Build configuration list for PBXNativeTarget "stash" */;
+			buildPhases = (
+				5CBEFF0B2A5B7A000097340F /* Sources */,
+				5CBEFF0C2A5B7A000097340F /* Frameworks */,
+				5CBEFF0D2A5B7A000097340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stash;
+			productName = stash;
+			productReference = 5CBEFF0F2A5B7A000097340F /* stash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CBEFF242A5B7A010097340F /* stashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEFF3C2A5B7A010097340F /* Build configuration list for PBXNativeTarget "stashTests" */;
+			buildPhases = (
+				5CBEFF212A5B7A010097340F /* Sources */,
+				5CBEFF222A5B7A010097340F /* Frameworks */,
+				5CBEFF232A5B7A010097340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CBEFF272A5B7A010097340F /* PBXTargetDependency */,
+			);
+			name = stashTests;
+			productName = stashTests;
+			productReference = 5CBEFF252A5B7A010097340F /* stashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CBEFF2E2A5B7A010097340F /* stashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBEFF3F2A5B7A010097340F /* Build configuration list for PBXNativeTarget "stashUITests" */;
+			buildPhases = (
+				5CBEFF2B2A5B7A010097340F /* Sources */,
+				5CBEFF2C2A5B7A010097340F /* Frameworks */,
+				5CBEFF2D2A5B7A010097340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CBEFF312A5B7A010097340F /* PBXTargetDependency */,
+			);
+			name = stashUITests;
+			productName = stashUITests;
+			productReference = 5CBEFF2F2A5B7A010097340F /* stashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CBEFF072A5B79FF0097340F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5CBEFF0E2A5B7A000097340F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5CBEFF242A5B7A010097340F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5CBEFF0E2A5B7A000097340F;
+					};
+					5CBEFF2E2A5B7A010097340F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5CBEFF0E2A5B7A000097340F;
+					};
+				};
+			};
+			buildConfigurationList = 5CBEFF0A2A5B79FF0097340F /* Build configuration list for PBXProject "stash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CBEFF062A5B79FF0097340F;
+			productRefGroup = 5CBEFF102A5B7A000097340F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CBEFF0E2A5B7A000097340F /* stash */,
+				5CBEFF242A5B7A010097340F /* stashTests */,
+				5CBEFF2E2A5B7A010097340F /* stashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CBEFF0D2A5B7A000097340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEFF1A2A5B7A000097340F /* Preview Assets.xcassets in Resources */,
+				5CBEFF172A5B7A000097340F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEFF232A5B7A010097340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEFF2D2A5B7A010097340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CBEFF0B2A5B7A000097340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEFF1C2A5B7A000097340F /* Persistence.swift in Sources */,
+				5CBEFF1F2A5B7A000097340F /* stash.xcdatamodeld in Sources */,
+				5CBEFF152A5B7A000097340F /* ContentView.swift in Sources */,
+				5CBEFF132A5B7A000097340F /* stashApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEFF212A5B7A010097340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEFF2A2A5B7A010097340F /* stashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBEFF2B2A5B7A010097340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBEFF362A5B7A010097340F /* stashUITestsLaunchTests.swift in Sources */,
+				5CBEFF342A5B7A010097340F /* stashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CBEFF272A5B7A010097340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CBEFF0E2A5B7A000097340F /* stash */;
+			targetProxy = 5CBEFF262A5B7A010097340F /* PBXContainerItemProxy */;
+		};
+		5CBEFF312A5B7A010097340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CBEFF0E2A5B7A000097340F /* stash */;
+			targetProxy = 5CBEFF302A5B7A010097340F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5CBEFF372A5B7A010097340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CBEFF382A5B7A010097340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CBEFF3A2A5B7A010097340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stash/Preview Content\"";
+				DEVELOPMENT_TEAM = PG7SX6LT87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mvp.stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CBEFF3B2A5B7A010097340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stash/Preview Content\"";
+				DEVELOPMENT_TEAM = PG7SX6LT87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mvp.stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CBEFF3D2A5B7A010097340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG7SX6LT87;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mvp.stashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/stash";
+			};
+			name = Debug;
+		};
+		5CBEFF3E2A5B7A010097340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG7SX6LT87;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mvp.stashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/stash";
+			};
+			name = Release;
+		};
+		5CBEFF402A5B7A010097340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG7SX6LT87;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mvp.stashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = stash;
+			};
+			name = Debug;
+		};
+		5CBEFF412A5B7A010097340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PG7SX6LT87;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mvp.stashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = stash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CBEFF0A2A5B79FF0097340F /* Build configuration list for PBXProject "stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEFF372A5B7A010097340F /* Debug */,
+				5CBEFF382A5B7A010097340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEFF392A5B7A010097340F /* Build configuration list for PBXNativeTarget "stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEFF3A2A5B7A010097340F /* Debug */,
+				5CBEFF3B2A5B7A010097340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEFF3C2A5B7A010097340F /* Build configuration list for PBXNativeTarget "stashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEFF3D2A5B7A010097340F /* Debug */,
+				5CBEFF3E2A5B7A010097340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBEFF3F2A5B7A010097340F /* Build configuration list for PBXNativeTarget "stashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBEFF402A5B7A010097340F /* Debug */,
+				5CBEFF412A5B7A010097340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CBEFF1D2A5B7A000097340F /* stash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CBEFF1E2A5B7A000097340F /* stash.xcdatamodel */,
+			);
+			currentVersion = 5CBEFF1E2A5B7A000097340F /* stash.xcdatamodel */;
+			path = stash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CBEFF072A5B79FF0097340F /* Project object */;
+}
