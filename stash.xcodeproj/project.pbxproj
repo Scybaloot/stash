@@ -16,6 +16,7 @@
 		5CBEFF2A2A5B7A010097340F /* stashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF292A5B7A010097340F /* stashTests.swift */; };
 		5CBEFF342A5B7A010097340F /* stashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF332A5B7A010097340F /* stashUITests.swift */; };
 		5CBEFF362A5B7A010097340F /* stashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEFF352A5B7A010097340F /* stashUITestsLaunchTests.swift */; };
+		5CBEFF442A5B7A860097340F /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBEFF432A5B7A860097340F /* Vision.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5CBEFF2F2A5B7A010097340F /* stashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBEFF332A5B7A010097340F /* stashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashUITests.swift; sourceTree = "<group>"; };
 		5CBEFF352A5B7A010097340F /* stashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CBEFF432A5B7A860097340F /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBEFF442A5B7A860097340F /* Vision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				5CBEFF282A5B7A010097340F /* stashTests */,
 				5CBEFF322A5B7A010097340F /* stashUITests */,
 				5CBEFF102A5B7A000097340F /* Products */,
+				5CBEFF422A5B7A860097340F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +137,14 @@
 				5CBEFF352A5B7A010097340F /* stashUITestsLaunchTests.swift */,
 			);
 			path = stashUITests;
+			sourceTree = "<group>";
+		};
+		5CBEFF422A5B7A860097340F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CBEFF432A5B7A860097340F /* Vision.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
